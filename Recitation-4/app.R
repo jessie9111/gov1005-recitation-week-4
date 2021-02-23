@@ -11,7 +11,7 @@ library(shiny)
 library(tidyverse)
 library(tidycensus)
 
-# Define UI for application that draws a histogram
+# Define UI for application
 ui <- navbarPage(
     "Final Project Title",
     tabPanel("Model",
@@ -38,7 +38,7 @@ ui <- navbarPage(
              p("My name is ______ and I study ______. 
              You can reach me at ______@college.harvard.edu.")))
 
-# Define server logic required to draw a histogram
+# Define server logic required 
 server <- function(input, output) {
     
     racevars <- c(White = "B02001_002", 
