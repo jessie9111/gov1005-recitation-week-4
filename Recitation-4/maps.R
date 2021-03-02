@@ -24,6 +24,8 @@ map <- harris %>%
          caption = "Source: American Community Survey 2014-2018") +
     theme_void()
 
+ggsave("map.png", map)
+
 fairfax <- get_acs(geography = "tract",
                   variables = racevars, 
                   year = 2018,
@@ -43,5 +45,4 @@ map_2 <- fairfax %>%
          caption = "Source: American Community Survey 2014-2018") +
     theme_void()
 
-ggsave("map.png", map)
 ggsave("map_2.png", map_2)
