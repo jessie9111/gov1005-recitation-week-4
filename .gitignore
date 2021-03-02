@@ -39,3 +39,5 @@ vignettes/*.pdf
 .Renviron
 
 gov1005-recitation-week-4.Rproj
+*.DS_Store
+*.dcf
